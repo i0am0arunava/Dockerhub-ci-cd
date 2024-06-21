@@ -1,6 +1,6 @@
 name: CI/CD Pipeline
 
-# Define the events 
+# Define the events  
 on:
   push:
     branches:
