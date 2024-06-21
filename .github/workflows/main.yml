@@ -44,12 +44,12 @@ jobs:
       # Step 6: Build Docker image for the frontend
       - name: Build frontend Docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/sportnewsapp-frontend:latest -f Dockerfile.frontend .  
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/sportgitf-frontend:latest -f Dockerfile .  
 
       # Step 7: Build Docker image for the backend
       - name: Build backend Docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/sportnewsapp-backend:latest -f backend/Dockerfile .  
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/sportgitf-backend:latest -f backend/Dockerfile .  
 
       # Step 8: Authenticate with Docker Hub
       - name: Docker login
